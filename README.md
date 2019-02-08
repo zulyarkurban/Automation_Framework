@@ -1,4 +1,3 @@
-# Automation_Framework
 # Automation Framework
 
 Hi! This is my  **Automation Framework**.  This framework written with java.
@@ -149,3 +148,6 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMyNzQwNjA2MV19
+-->
