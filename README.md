@@ -1,7 +1,7 @@
 # Automation_Framework
 ## framework includes
-	-page object model
-	-extent report
+	 * page object model
+	-  extent report
 	-  properties file
 	-  selenium
 	-  maven
