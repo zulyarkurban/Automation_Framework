@@ -2,7 +2,13 @@
 <suite name="suit name">
     <test name="test name">
         <packages>
-
+            <package name="com.mobileteknoloji.tests.smoke_tests"/>
+            <package name="com.mobileteknoloji.tests.functional_tests"/>
+            <package name="com.mobileteknoloji.tests.regression_tests"/>
         </packages>
+
+        <classes>
+            <class name="com.mobileteknoloji.tests.smoke_tests.login.LoginTest"/>
+        </classes>
     </test>
 </suite>
