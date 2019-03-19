@@ -10,16 +10,6 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//a[contains(text(),'BriteErpDemo')]")
-    public WebElement britErpDemoButton;
-    @FindBy(id = "login")
-    public WebElement email;
-
-    @FindBy(id = "password")
-    public WebElement password;
-
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement login;
 
 
 }

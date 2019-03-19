@@ -32,6 +32,25 @@
             <artifactId>extentreports</artifactId>
             <version>4.0.6</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>4.0.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>4.2.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>4.2.3</version>
+        </dependency>
+
     </dependencies>
 
     <build>
