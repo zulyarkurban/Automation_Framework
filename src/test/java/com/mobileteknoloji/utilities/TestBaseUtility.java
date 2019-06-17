@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public abstract class TestBase {
+public abstract class TestBaseUtility {
     protected WebDriver driver;
     protected Pages pages;
     protected static ExtentReports report;
