@@ -107,6 +107,15 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -114,18 +123,20 @@
                 <version>2.21.0</version>
                 <configuration>
                     <suiteXmlFiles>
+                        <!--this is xml file run for smoke test -->
                         <suiteXmlFile>smoketest_runner.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <includes>
+                        <!--main runnar-->
+                        <include>**/CukesRunner.java</include>
+                        <!--if there are failed scenarios,this class will be run-->
+                        <include>**/FailedScenarios.java</include>
+                    </includes>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
+
+            <!--generate cucumber report-->
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>

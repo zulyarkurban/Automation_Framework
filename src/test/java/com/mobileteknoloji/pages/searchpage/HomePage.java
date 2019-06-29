@@ -20,4 +20,7 @@ public class HomePage {
     @FindBy(xpath = "//span[@class='a-color-state a-text-bold']")
     public WebElement resultLabel;
 
+    @FindBy(id = "nav-link-accountList")
+    public WebElement loginButton;
+
 }

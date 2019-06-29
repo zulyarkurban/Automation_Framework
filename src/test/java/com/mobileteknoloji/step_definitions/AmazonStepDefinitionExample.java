@@ -16,9 +16,12 @@ public class AmazonStepDefinitionExample {
     }
 
     @When("user enter {string} on searchbox")
-    public void user_enter_on_searchbox(String string) {
+    public void user_enter_on_searchbox(String item) {
 
-        homePage.searchBox.sendKeys(string);
+//        homePage.searchBox.sendKeys(string);
+//        homePage.searchButton.click();
+
+        homePage.searchBox.sendKeys(item);
         homePage.searchButton.click();
     }
 
