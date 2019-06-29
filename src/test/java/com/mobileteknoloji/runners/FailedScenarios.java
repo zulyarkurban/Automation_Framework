@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "@target/rerun.txt",
-        dryRun = false,
+        glue = "com/mobileteknoloji/step_definitions",
+//        dryRun = false,
         plugin = {
                 "json:target/cucumber.json",
                 "html:target/cucumber/",

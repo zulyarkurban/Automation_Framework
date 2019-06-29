@@ -1,4 +1,4 @@
-package com.mobileteknoloji.pages.searchpage;
+package com.mobileteknoloji.pages;
 
 import com.mobileteknoloji.utilities.Driver;
 import org.openqa.selenium.WebElement;
@@ -20,7 +20,5 @@ public class HomePage {
     @FindBy(xpath = "//span[@class='a-color-state a-text-bold']")
     public WebElement resultLabel;
 
-    @FindBy(id = "nav-link-accountList")
-    public WebElement loginButton;
 
 }

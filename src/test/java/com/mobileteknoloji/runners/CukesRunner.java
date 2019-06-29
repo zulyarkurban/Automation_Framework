@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/mobileteknoloji/step_definitions"
-        , dryRun = false
-        , tags = "@negative"
+        , dryRun = true
+        , tags = "@login"
 )
 public class CukesRunner {
 

@@ -10,13 +10,17 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//input[@id='ap_email']")
+    @FindBy(name = "username")
     public WebElement username;
-    @FindBy(xpath = "//input[@id='ap_password']")
+    @FindBy(name = "password")
     public WebElement password;
+    @FindBy(xpath = "//input[@class='btn btn-primary pull-right']")
+    public WebElement loginButton;
+    @FindBy(xpath = "//input[@class='btn btn-primary pull-right']")
+    public WebElement alertMessge;
+    @FindBy(className = "page-header")
+    public WebElement HomePage;
 
-    @FindBy(className = "a-alert-heading")
-    public WebElement alertMessage;
 
 
 

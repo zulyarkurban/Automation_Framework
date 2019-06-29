@@ -1,7 +1,7 @@
 package com.mobileteknoloji.utilities;
 
 import com.mobileteknoloji.pages.LoginPage;
-import com.mobileteknoloji.pages.searchpage.HomePage;
+import com.mobileteknoloji.pages.HomePage;
 
 public class Pages {
     public LoginPage loginPage;

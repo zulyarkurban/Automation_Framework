@@ -1,6 +1,6 @@
 package com.mobileteknoloji.step_definitions;
 
-import com.mobileteknoloji.pages.searchpage.HomePage;
+import com.mobileteknoloji.pages.HomePage;
 import com.mobileteknoloji.utilities.ConfigurationReader;
 import com.mobileteknoloji.utilities.Driver;
 import cucumber.api.java.en.Given;
