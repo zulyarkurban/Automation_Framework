@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
         glue = "com/mobileteknoloji/step_definitions",
 //        dryRun = false,
         plugin = {
-                "json:target/cucumber.json",
-                "html:target/cucumber/",
+                "json:target/json-reports/cucumber.json",
+                "html:target/FailedScenarios_cucumber/",
                 //"return:target/rerun.txt"
         }
 

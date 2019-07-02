@@ -103,9 +103,16 @@
             <version>1.5.4</version>
         </dependency>
 
+
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+               <directory>src/test/resources/logs</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -124,15 +131,19 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--this is xml file run for smoke test -->
-                        <suiteXmlFile>smoketest_runner.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>smoketest_runner.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
-                    <testFailureIgnore>true</testFailureIgnore>
+
                     <includes>
                         <!--main runnar-->
                         <include>**/CukesRunner.java</include>
                         <!--if there are failed scenarios,this class will be run-->
-                        <include>**/FailedScenarios.java</include>
+                        <!--<include>**/FailedScenarios.java</include>-->
+
+                        <!--all Runners which name contains Runners will be execute-->
+                        <!--<include>**/runners/*Runners*.java</include>-->
                     </includes>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
 
@@ -157,7 +168,7 @@
 
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
-                                <param>**/cucumber.json</param>
+                                <param>**/json-reports/cucumber.json</param>
                             </jsonFiles>
                             <classificationFiles>
                                 <!-- supports wildcard or name pattern -->
@@ -169,6 +180,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class TestAuthPostive {
+public class TestAuth {
     HomePage homePage=new HomePage();
     LoginPage loginPage=new LoginPage();
 
@@ -32,15 +32,6 @@ public class TestAuthPostive {
 
     }
 
-//    @When("user enter {username} and {password}")
-//    public void user_enter_and(String name, String pass) {
-//
-//        BrowserUtils.wait(3);
-//        loginPage.username.sendKeys(name);
-//        loginPage.password.sendKeys(pass);
-//        loginPage.loginButton.click();
-//
-//    }
 
     @Then("user should be login to website")
     public void user_should_be_login_to_website() {

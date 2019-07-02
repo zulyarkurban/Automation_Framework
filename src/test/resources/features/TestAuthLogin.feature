@@ -1,4 +1,3 @@
-
 Feature: Login Testing
 
   @positive
@@ -16,6 +15,7 @@ Feature: Login Testing
 #    Then user should be login to website
 
 
+
   @login
   Scenario Outline: login to TestAuth website with credentials
     Given user open the Test Auth website
@@ -25,5 +25,5 @@ Feature: Login Testing
     Examples:
       | username        | password |
       | mobileteknoloji | 123456   |
-      | mobileteknoloji   | test1     |
-      | mobtek            | 123456    |
+      | mobileteknoloji | test1    |
+      | mobtek          | 123456   |
