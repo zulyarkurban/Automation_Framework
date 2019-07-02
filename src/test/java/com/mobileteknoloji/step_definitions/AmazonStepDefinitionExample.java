@@ -13,13 +13,11 @@ public class AmazonStepDefinitionExample {
     @Given("user open the Amazon")
     public void user_open_the_Amazon() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+
     }
 
     @When("user enter {string} on searchbox")
     public void user_enter_on_searchbox(String item) {
-
-//        homePage.searchBox.sendKeys(string);
-//        homePage.searchButton.click();
 
         homePage.searchBox.sendKeys(item);
         homePage.searchButton.click();

@@ -43,6 +43,7 @@ public class LogTest {
         new Actions(Driver.getDriver()).dragAndDrop(draggable, droppable).build().perform();
         log.info("Drag and drop success");
 
+        Driver.closeDriver();
 
     }
 }
