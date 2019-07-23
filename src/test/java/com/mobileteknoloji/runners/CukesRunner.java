@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/mobileteknoloji/step_definitions"
         , dryRun = false
-        , tags = "@amazon"
+        , tags = "@positive"
 )
 public class CukesRunner {
 
