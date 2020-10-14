@@ -1,6 +1,7 @@
 package com.mobileteknoloji.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,14 +10,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import java.net.URL;
 
 public class Driver {
     private Driver() {
     }
 
     private static WebDriver driver;
-
     public static WebDriver getDriver() {
         if (driver == null) {
             switch (ConfigurationReader.getProperty("browser")) {
@@ -61,6 +65,17 @@ public class Driver {
                     WebDriverManager.getInstance(SafariDriver.class).setup();
                     driver = new SafariDriver();
                     break;
+                case "remote":
+                    try {
+                        DesiredCapabilities capability = DesiredCapabilities.chrome();
+                        capability.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+                        capability.setPlatform(Platform.LINUX);
+                        driver = new RemoteWebDriver(new URL(ConfigurationReader.getProperty("hub.url")), capability);
+                        break;
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+
             }
         }
 

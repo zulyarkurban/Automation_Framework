@@ -16,7 +16,7 @@ Feature: Login Testing
 
 
 
-  @login
+  @positive
   Scenario Outline: login to TestAuth website with credentials
     Given user open the Test Auth website
     When user enter "<username>" and "<password>"
