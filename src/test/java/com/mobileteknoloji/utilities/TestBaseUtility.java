@@ -1,12 +1,10 @@
 package com.mobileteknoloji.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import java.io.IOException;

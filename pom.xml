@@ -8,94 +8,83 @@
     <artifactId>Automation_Framework</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.14.0</version>
+            <version>3.141.59</version>
         </dependency>
 
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <version>7.3.0</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>4.0.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>4.0.6</version>
+            <version>4.2.2</version>
         </dependency>
 
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>4.2.3</version>
+            <version>6.8.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>4.2.3</version>
+            <version>6.8.1</version>
         </dependency>
 
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>3.3.0</version>
+            <version>4.3.1</version>
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.5</version>
+            <version>42.2.17</version>
         </dependency>
 
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>0.17.2</version>
+            <version>1.0.2</version>
         </dependency>
 
-      <dependency>
-         <groupId>org.apache.logging.log4j</groupId>
-         <artifactId>log4j-core</artifactId>
-          <version>2.13.2</version>
-       </dependency>
-
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.13.3</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>4.0.1</version>
+            <version>4.1.2</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>4.0.1</version>
+            <version>4.1.2</version>
         </dependency>
-
 
         <!--Ashot for screenshot-->
         <dependency>
@@ -103,7 +92,12 @@
             <artifactId>ashot</artifactId>
             <version>1.5.4</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>4.0.6</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 

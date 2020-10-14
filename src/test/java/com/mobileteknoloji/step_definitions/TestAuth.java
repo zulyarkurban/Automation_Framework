@@ -5,9 +5,7 @@ import com.mobileteknoloji.pages.HomePage;
 import com.mobileteknoloji.utilities.BrowserUtils;
 import com.mobileteknoloji.utilities.ConfigurationReader;
 import com.mobileteknoloji.utilities.Driver;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,7 +37,7 @@ public class TestAuth {
         WebDriverWait wait=new WebDriverWait(Driver.getDriver(),3);
         wait.until(ExpectedConditions.visibilityOf(loginPage.HomePage));
 
-        String expected="Change Services Password";
+        String expected="Your Profile";
         String actual=loginPage.HomePage.getText();
         Assert.assertEquals(actual,expected);
     }

@@ -1,9 +1,9 @@
 package com.mobileteknoloji.step_definitions;
 
 import com.mobileteknoloji.utilities.Driver;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+
+import io.cucumber.java.*;
+import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -27,7 +27,7 @@ public class Hooks {
             // this line is for taking screenshot
             final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             // this line is adding the screenshot to the report
-            scenario.embed(screenshot, "image/png");
+            scenario.attach(screenshot,"image/png","");
         }
 
         System.out.println("Closing driver");
